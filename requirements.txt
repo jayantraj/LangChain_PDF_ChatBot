@@ -1,0 +1,5 @@
+langchain
+langchain_openai
+cassio 
+PyPDF2
+streamlit
