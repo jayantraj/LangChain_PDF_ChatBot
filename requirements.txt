@@ -1,7 +1,0 @@
-cassio 
-langchain-community
-openai 
-tiktoken
-PyPDF2
-streamlit
-langchain_openai
