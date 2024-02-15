@@ -70,13 +70,6 @@ def user_input(user_question):
     # print("ANSWER: \"%s\"\n" % answer)
     st.write('Answer: \n',answer)
     st.session_state['chat_history'].append(("Bot", answer))
-
-    # print("FIRST DOCUMENTS BY RELEVANCE:")
-    # top 4 matches
-    st.write('\nFirst 2 Matching Documents by Relevance')
-    for doc, score in astra_vector_store.similarity_search_with_score(user_question, k=2):
-        # print("    [%0.4f] \"%s ...\"" % (score, doc.page_content))
-        st.write("    [%0.4f] \"%s ...\"" % (score, doc.page_content))
     
 
 def main():
