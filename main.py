@@ -32,7 +32,7 @@ embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 # Create your LangChain vector store ... backed by Astra DB!
 astra_vector_store = Cassandra(
     embedding=embedding,
-    table_name="qa_mini_demo",
+    table_name="Pdf_QA",
     session=None,
     keyspace=None,
 )
