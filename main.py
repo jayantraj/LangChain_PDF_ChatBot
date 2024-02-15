@@ -51,7 +51,7 @@ def get_pdf_text(pdf_documents):
 
 def get_text_chunks(text):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=4000,chunk_overlap=200)
+        chunk_size=400,chunk_overlap=20)
     chunks = text_splitter.split_text(text)
 
     return chunks
